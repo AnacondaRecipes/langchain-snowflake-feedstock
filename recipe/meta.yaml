@@ -10,17 +10,17 @@ source:
   sha256: bd9f99bed65cd7c0f889e63e21186a2444e6b3e4feabe362263ddfbd20dfdeb4
 
 build:
-  noarch: python
+  skip: True  # [py<39 or py>311]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.9,<3.12
+    - python
     - langchain-core >=0.3.0,<0.4.0
     - snowflake >=0.8.0,<1.0
 
@@ -36,7 +36,11 @@ about:
   home: https://github.com/langchain-ai/langchain-snowflake
   summary: An integration package connecting Snowflake and LangChain
   license: MIT
+  license_family: MIT
   license_file: LICENSE
+  dev_url: https://github.com/langchain-ai/langchain-snowflake
+  doc_url: https://github.com/langchain-ai/langchain-snowflake/blob/main/libs/snowflake/docs/retrievers.ipynb
+  description: This package contains the LangChain integration with Snowflake.
 
 extra:
   recipe-maintainers:

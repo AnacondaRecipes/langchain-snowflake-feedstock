@@ -29,6 +29,7 @@ test:
     - langchain_snowflake
   commands:
     - pip check
+    - python -c "from langchain_snowflake.retrievers import (CortexSearchRetriever, CortexSearchRetrieverError)"
   requires:
     - pip
 

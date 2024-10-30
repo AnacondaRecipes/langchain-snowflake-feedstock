@@ -27,8 +27,8 @@ requirements:
 test:
   imports:
     - langchain_snowflake
-    - langchain_snowflake.CortexSearchRetriever
-    - langchain_snowflake.CortexSearchRetrieverError
+    - langchain_snowflake.retrievers.CortexSearchRetriever
+    - langchain_snowflake.retrievers.CortexSearchRetrieverError
   commands:
     - pip check
   requires:

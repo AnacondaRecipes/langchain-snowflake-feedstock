@@ -1,5 +1,2 @@
 upload_channels:
   - sfe1ed40
-
-channels:
-  - https://staging.continuum.io/prefect/fs/langchain-core-feedstock/pr4/90ab031

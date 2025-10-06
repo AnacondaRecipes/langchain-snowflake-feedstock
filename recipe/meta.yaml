@@ -65,7 +65,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   dev_url: https://github.com/langchain-ai/langchain-snowflake
-  doc_url: https://github.com/langchain-ai/langchain-snowflake/blob/main/libs/snowflake/docs/retrievers.ipynb
+  doc_url: https://python.langchain.com/docs/integrations/document_loaders/snowflake
   description: This package contains the LangChain integration with Snowflake.
 
 extra:
